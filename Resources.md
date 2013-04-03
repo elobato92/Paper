@@ -2,6 +2,7 @@ Resources
 ==========
 
 Official Python Sources
+
 --------------------------
 <a href="http://www.python.org/dev/peps/pep-3105/">Proposal Source</a>
 <br>*Describes the initial proposal into making print a function instead of a statement.*
