@@ -1,5 +1,7 @@
-Rough Draft
-===========
+Print: Statement vs. Function in Python
+=======================================
+
+*Written by Andrea Sassu and Eric Lobato*
 
 ###Introduction###
 
