@@ -18,6 +18,8 @@ Python 3.0. This paper shall analyze the process, reasoning, and changes that oc
 Statements in Python are simple lines of code. Considering 2.x and earlier versions of Python, print consisted only 
 of a few arguments, as seen below:
 
+      print ("Print this line, and print a newline")
+      print ("Print this line, but not a newline", end="")
 
 Each new segment or idea of code needs a new print statement, if the statements are complex enough to require multiple executions. 
 As is typical of other programming languages, outputted content must be put within quotation marks. If the programmer 
@@ -25,6 +27,15 @@ wants to output the value of a variable, then that must not be in quotes. Differ
 like switching between text and variables, must have commas between the items in order for the compiler to understand the different arguments. 
 This is exemplified below:
 
+      teeth = "white"
+      coal = "black"
+
+      print teeth,"teeth and",coal,"shoes"
+      print teeth," - teeth and - ",coal," - shoes"
+
+      teeth = "yellow"; coal = "red"
+      print teeth,"teeth and",
+      print coal,"shoes"
 
 This implementation is extremely straightforward. Statements have the benefit of being easy to read and execute, 
 because the syntax is easily understandable. However, this is also the great flaw of print as a statement: it can 
@@ -48,7 +59,7 @@ Making this change keeps more true to the nature and goals of the Python languag
 
 Overall, the goal to change the print to a function will make it similar to the following sort of execution below:
 
-
+          print >>sys.stderr, a, b, c
           
 Again, this would allow print to function more like printf in C++, as one key example. Making print more direct with 
 more power is ideal, as outputting data or information to the user in both a smart and nice fashion is an essential 
@@ -61,6 +72,8 @@ Functions in Python are the backbone of the programming language. They must be p
 but also flexible enough to be combined with plenty of other functions. Print is no exception. An example of the 
 new implementation of print after Python 3.0 is as follows:
 
+          basket = ('Apple', 'Oranges', 'Banana')
+          print (*basket, sep=", ", end=".\n")
           
 The syntax of a function is more complicated than that of a statement, which makes it a bit more difficult to read 
 and program for new programmers. It is much less intuitive to have to include an extra separator value to the print statement, 
@@ -71,6 +84,16 @@ to print the variable "basket".
 However, this syntax allows for much more powerful outputs. The code below is the same as what is expressed in statements 
 above, but now the print is used as it would be in Python 3.0 and onward, with print as a function:
 
+          teeth = "white"
+          coal = "black"
+
+          print (teeth,"teeth and",coal,"shoes")
+          print (teeth,"teeth and",coal,"shoes",sep = " - ")
+
+          teeth = "yellow"; coal = "red"
+          print (teeth,"teeth and",end = "")
+          
+          print (coal,"shoes")
           
 This is code similar to what was exemplified earlier, but with a few key changes, like the declaration of variables. 
 The overall flow of the code is much nicer, especially by Python standards. In addition to things like this, print is 
