@@ -76,7 +76,7 @@ new implementation of print after Python 3.0 is as follows:
           print (*basket, sep=", ", end=".\n")
           
 The syntax of a function is more complicated than that of a statement, which makes it a bit more difficult to read 
-and program for new programmers. It is much less intuitive to have to include an extra seperator value to the print statement, 
+and program for new programmers. It is much less intuitive to have to include an extra separator value to the print statement, 
 for example, which can made this particular segment of code harder to read. The overall output is simple, but the
 implementation requires significantly more initial information and resources to code properly than simply making a statement 
 to print the variable "basket".
@@ -98,7 +98,7 @@ above, but now the print is used as it would be in Python 3.0 and onward, with p
 This is code similar to what was exemplified earlier, but with a few key changes, like the declaration of variables. 
 The overall flow of the code is much nicer, especially by Python standards. In addition to things like this, print is 
 also able to be used in tandem with a function call, lambdas, and other complex things within Python. In addition to the 
-added features, if a user wished to impliment print simply with the same basic syntax used with a statement, print 
+added features, if a user wished to implement print simply with the same basic syntax used with a statement, print 
 retained the functionality in 3.0 and on to be backwards-compatible with that sot of syntax. This way, print is able 
 to evolve and be used in more interesting ways while still being able to cover simple output to the user easily.
           
@@ -106,17 +106,17 @@ to evolve and be used in more interesting ways while still being able to cover s
 
 The community response to this change was generally positive. Print was made similar to other language's versions of 
 printing output, which allows for well seasoned programmers to utilize print in a way that they feel is both familiar 
-and accomidating. Print can be used with any other function and more flexibly in the code, which is better in line with 
+and accommodating. Print can be used with any other function and more flexibly in the code, which is better in line with 
 what software developers would hope fore.
 
 For people who are new to programming and come to Python, the print statement can still be made as a friendly function. 
 The implementation methods used while print was a statement still work for print now that it is a function, so 
-programmers who wish to ignore the change absolutely can. Overall, this change makes print ore accessable for all types 
+programmers who wish to ignore the change absolutely can. Overall, this change makes print ore accessible for all types 
 of programmers in the Python community, which is why the move was made without many complications of complaints from 
 the community.
 
 ###Conclusion###
 
 The decision to move print from a statement to a function was overall a good idea. The community has since felt that print can now 
-meet its more complicated demands when necessary without being overly complicated for the new users. The power and funcationality 
+meet its more complicated demands when necessary without being overly complicated for the new users. The power and functionality 
 of the new print since Python 3.0 fits in much better with Python's feel as a language, as it still is simple, fast, and powerful. 
